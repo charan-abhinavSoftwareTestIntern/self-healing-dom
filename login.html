@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Signin</title>
+
+    <style>
+        body {
+            font-family: Verdana, sans-serif;
+            background: #e9ecef;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .auth-box {
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 8px;
+            width: 320px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        }
+
+        .field-block {
+            margin-bottom: 12px;
+        }
+
+        input {
+            width: 100%;
+            padding: 7px;
+            border: 1px solid #aaa;
+            border-radius: 4px;
+        }
+
+        button {
+            width: 100%;
+            padding: 9px;
+            background: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="auth-box" data-container="authRoot_X9">
+
+        <h3 data-title="signinHeader">Sign In</h3>
+
+        <form data-form-id="form_9821" autocomplete="off">
+
+            <div class="field-block" data-section="userField">
+                <label>User ID</label>
+                <input 
+                    type="text"
+                    data-test="usr_input_A1"
+                    aria-label="username-field"
+                    class="fld usr-field"
+                    placeholder="Enter username">
+            </div>
+
+            <div class="field-block" data-section="passField">
+                <label>Secret Key</label>
+                <input 
+                    type="password"
+                    data-test="pwd_input_B2"
+                    aria-label="password-field"
+                    class="fld pwd-field"
+                    placeholder="Enter password">
+            </div>
+
+            <button 
+                type="submit"
+                data-action="submitLogin"
+                class="action-btn submit-btn">
+                Sign In
+            </button>
+
+        </form>
+
+        <div class="footer-area" data-footer="foot_77">
+            <a href="#" data-link="resetPwd">Reset Password</a>
+        </div>
+
+    </div>
+
+</body>
+</html>

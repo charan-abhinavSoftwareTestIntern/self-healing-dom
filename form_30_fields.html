@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprehensive Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .row {
+            display: flex;
+            gap: 10px;
+        }
+        .row .form-group {
+            flex: 1;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>User Registration Form</h2>
+    <form>
+        <div class="row">
+            <div class="form-group">
+                <label>First Name</label>
+                <input type="text">
+            </div>
+            <div class="form-group">
+                <label>Last Name</label>
+                <input type="text">
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Email</label>
+            <input type="email">
+        </div>
+        <div class="form-group">
+            <label>Password</label>
+            <input type="password">
+        </div>
+        <div class="form-group">
+            <label>Confirm Password</label>
+            <input type="password">
+        </div>
+        <div class="form-group">
+            <label>Phone Number</label>
+            <input type="tel">
+        </div>
+        <div class="form-group">
+            <label>Date of Birth</label>
+            <input type="date">
+        </div>
+        <div class="form-group">
+            <label>Gender</label>
+            <select>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Address Line 1</label>
+            <input type="text">
+        </div>
+        <div class="form-group">
+            <label>Address Line 2</label>
+            <input type="text">
+        </div>
+        <div class="row">
+            <div class="form-group">
+                <label>City</label>
+                <input type="text">
+            </div>
+            <div class="form-group">
+                <label>State</label>
+                <input type="text">
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Zip Code</label>
+            <input type="text">
+        </div>
+        <div class="form-group">
+            <label>Country</label>
+            <input type="text">
+        </div>
+        <div class="form-group">
+            <label>Occupation</label>
+            <input type="text">
+        </div>
+        <div class="form-group">
+            <label>Company Name</label>
+            <input type="text">
+        </div>
+        <div class="form-group">
+            <label>Experience (Years)</label>
+            <input type="number">
+        </div>
+        <div class="form-group">
+            <label>Skills</label>
+            <input type="text">
+        </div>
+        <div class="form-group">
+            <label>LinkedIn Profile</label>
+            <input type="url">
+        </div>
+        <div class="form-group">
+            <label>Portfolio Website</label>
+            <input type="url">
+        </div>
+        <div class="form-group">
+            <label>Preferred Work Location</label>
+            <select>
+                <option>Remote</option>
+                <option>Onsite</option>
+                <option>Hybrid</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Expected Salary</label>
+            <input type="number">
+        </div>
+        <div class="form-group">
+            <label>Notice Period</label>
+            <input type="text">
+        </div>
+        <div class="form-group">
+            <label>Languages Known</label>
+            <input type="text">
+        </div>
+        <div class="form-group">
+            <label>Certifications</label>
+            <input type="text">
+        </div>
+        <div class="form-group">
+            <label>Hobbies</label>
+            <input type="text">
+        </div>
+        <div class="form-group">
+            <label>About You</label>
+            <textarea rows="4"></textarea>
+        </div>
+        <div class="form-group">
+            <label>
+                <input type="checkbox"> I agree to terms and conditions
+            </label>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+</body>
+</html>

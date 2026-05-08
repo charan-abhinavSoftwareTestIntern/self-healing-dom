@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Access</title>
+
+    <style>
+        body {
+            font-family: Tahoma, sans-serif;
+            background-color: #f1f3f5;
+            display: grid;
+            place-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .login-wrapper {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            width: 340px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #bbb;
+            border-radius: 5px;
+        }
+
+        .btn-submit {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .helper-links {
+            margin-top: 12px;
+            text-align: center;
+        }
+
+        .helper-links a {
+            text-decoration: none;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="login-wrapper" data-root="container_ZX1">
+
+        <h2 data-heading="accessTitle">User Access</h2>
+
+        <form data-identifier="loginForm_550" autocomplete="off">
+
+            <div class="input-group" data-block="idSection">
+                <label>Account Name</label>
+                <input 
+                    type="text"
+                    data-marker="input_user_X"
+                    aria-label="account-input"
+                    class="input-text account-field"
+                    placeholder="Type your account name">
+            </div>
+
+            <div class="input-group" data-block="keySection">
+                <label>Access Code</label>
+                <input 
+                    type="password"
+                    data-marker="input_pass_Y"
+                    aria-label="accesscode-input"
+                    class="input-text code-field"
+                    placeholder="Type your access code">
+            </div>
+
+            <button 
+                type="submit"
+                data-trigger="loginAction"
+                class="btn-submit primary-action">
+                Login Now
+            </button>
+
+        </form>
+
+        <div class="helper-links" data-area="supportLinks">
+            <a href="#" data-nav="recoverAccess">Forgot Access Code?</a>
+        </div>
+
+    </section>
+
+</body>
+</html>
